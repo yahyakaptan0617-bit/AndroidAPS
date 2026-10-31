@@ -1,4 +1,34 @@
 # AAPS
+
+## Bu fork hakkında (Türkçe)
+
+Bu depo, AndroidAPS (AAPS) projesinin bir fork'udur. AAPS'in desteklediği pompa ve sensör sürücüleri bu fork'ta da bulunur.
+
+- **Pompalar** (`pump/` klasörü): Combo, Dana, DanaR, DanaRS, Diaconn, EOPatch, Equil, Insight, Medtronic, Medtrum, Omnipod ve sanal pompa.
+- **Sensörler** (`plugins/source/` klasörü): Dexcom, Glimp, Glunovo, Intelligo, MM640g, Nightscout istemcisi, Poctech, Syai, Tomato, xDrip ve diğerleri.
+
+### Build almak için
+
+1. Bilgisayarına Android Studio ve uygun JDK'yi kur (güncel sürüm için JDK 21).
+2. Fork'u klonla:
+
+```
+git clone --recurse-submodules https://github.com/yahyakaptan0617-bit/AndroidAPS.git && cd AndroidAPS
+```
+
+3. Android Studio'da klasörü aç ve `full` build türünü seç (`app` modülü, `full` flavor).
+4. Uygulamayı imzalamak için kendi keystore dosyanı kullan.
+
+Daha ayrıntılı bilgi için resmî wiki'ye bak: https://wiki.aaps.app
+
+### Release almak için
+
+- Sürüm numarası `buildSrc/src/main/kotlin/Versions.kt` dosyasındaki `appVersion` alanında tutulur.
+- Release oluşturmadan önce değişikliklerini gerçek cihazlarla test et.
+- Release notlarında bu yazılımın tedavi için onaylı olmadığını ve kullanım sorumluluğunun kullanıcıya ait olduğunu açıkça belirt.
+
+---
+
 * Check the wiki: https://wiki.aaps.app
 *  Everyone who’s been looping with AAPS needs to fill out the form after 3 days of looping  https://docs.google.com/forms/d/14KcMjlINPMJHVt28MDRupa4sz4DDIooI4SrW0P3HSN8/viewform?c=0&w=1
 
