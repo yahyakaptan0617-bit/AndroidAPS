@@ -76,23 +76,23 @@
 
     <!--    Loop     -->
     <color name="loopDisconnected">#939393</color>
-    <color name="loopClosed">#00C03E</color>
+    <color name="loopClosed">#6FCF97</color>
     <color name="loopLgs">#800080</color>
-    <color name="loopSuspended">#F6CE22</color>
+    <color name="loopSuspended">#FFC145</color>
     <color name="loopOpened">#4983D7</color>
-    <color name="loopDisabled">#FF1313</color>
+    <color name="loopDisabled">#EB5757</color>
 
     <!--    BgReading-->
-    <color name="inRange">#00FF00</color>
-    <color name="low">#FF0000</color>
-    <color name="high">#FFFB8C00</color>
-    <color name="iob">#1e88e5</color>
+    <color name="inRange">#6FCF97</color>
+    <color name="low">#EB5757</color>
+    <color name="high">#FFC145</color>
+    <color name="iob">#1E96FC</color>
     <color name="extendedBolus">#1e88e5</color>
     <color name="iobPredAS">#1ea3e5</color>
     <color name="cob">#FFFB8C00</color>
     <color name="carbs">#FFFB8C00</color>
-    <color name="uam">#c9bd60</color>
-    <color name="zt">#00d2d2</color>
+    <color name="uam">#D12BF7</color>
+    <color name="zt">#7161EF</color>
     <color name="calibration">#E83258</color>
     <color name="bolusDataPointColor">#00FFFF</color>
     <color name="profileSwitch">#000000</color>
