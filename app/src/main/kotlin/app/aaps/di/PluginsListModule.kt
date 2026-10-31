@@ -34,6 +34,7 @@ import app.aaps.plugins.sensitivity.SensitivityWeightedAveragePlugin
 import app.aaps.plugins.smoothing.AvgSmoothingPlugin
 import app.aaps.plugins.smoothing.ExponentialSmoothingPlugin
 import app.aaps.plugins.smoothing.NoSmoothingPlugin
+import app.aaps.plugins.source.AccuChekSmartGuidePlugin
 import app.aaps.plugins.source.DexcomPlugin
 import app.aaps.plugins.source.GlimpPlugin
 import app.aaps.plugins.source.GlunovoPlugin
@@ -409,6 +410,12 @@ abstract class PluginsListModule {
     @IntoMap
     @IntKey(430)
     abstract fun bindGlimpPlugin(plugin: GlimpPlugin): PluginBase
+
+    @Binds
+    @AllConfigs
+    @IntoMap
+    @IntKey(435)
+    abstract fun bindAccuChekSmartGuidePlugin(plugin: AccuChekSmartGuidePlugin): PluginBase
 
     @Binds
     @AllConfigs
