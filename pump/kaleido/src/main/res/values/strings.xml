@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kaleido_pump">Kaleido (not functional)</string>
+    <string name="kaleido_shortname">KALEIDO</string>
+    <string name="description_pump_kaleido">Placeholder for a future Kaleido pump driver. It cannot communicate with a pump and never delivers insulin.</string>
+    <string name="kaleido_not_implemented">Kaleido pump driver is not implemented. No insulin was delivered.</string>
+</resources>

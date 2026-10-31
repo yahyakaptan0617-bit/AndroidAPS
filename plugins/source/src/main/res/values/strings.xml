@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Source -->
+    <string name="accu_chek_smartguide">Accu-Chek SmartGuide (not functional)</string>
+    <string name="accu_chek_smartguide_short">SMARTGUIDE</string>
+    <string name="description_source_accu_chek_smartguide">Placeholder for a future Accu-Chek SmartGuide source. It does not receive or store any glucose values.</string>
     <string name="ns_client_bg">NSClient BG</string>
     <string name="ns_client_bg_short">NS BG</string>
     <string name="description_source_ns_client">Downloads BG data from Nightscout</string>

@@ -34,6 +34,7 @@ import app.aaps.plugins.sensitivity.SensitivityWeightedAveragePlugin
 import app.aaps.plugins.smoothing.AvgSmoothingPlugin
 import app.aaps.plugins.smoothing.ExponentialSmoothingPlugin
 import app.aaps.plugins.smoothing.NoSmoothingPlugin
+import app.aaps.plugins.source.AccuChekSmartGuidePlugin
 import app.aaps.plugins.source.DexcomPlugin
 import app.aaps.plugins.source.GlimpPlugin
 import app.aaps.plugins.source.GlunovoPlugin
@@ -63,6 +64,7 @@ import app.aaps.pump.diaconn.DiaconnG8Plugin
 import app.aaps.pump.eopatch.EopatchPumpPlugin
 import app.aaps.pump.equil.EquilPumpPlugin
 import app.aaps.pump.insight.InsightPlugin
+import app.aaps.pump.kaleido.KaleidoPumpPlugin
 import app.aaps.pump.medtronic.MedtronicPumpPlugin
 import app.aaps.pump.medtrum.MedtrumPlugin
 import app.aaps.pump.omnipod.dash.OmnipodDashPumpPlugin
@@ -222,6 +224,12 @@ abstract class PluginsListModule {
     @IntoMap
     @IntKey(170)
     abstract fun bindEquilPumpPlugin(plugin: EquilPumpPlugin): PluginBase
+
+    @Binds
+    @PumpDriver
+    @IntoMap
+    @IntKey(175)
+    abstract fun bindKaleidoPumpPlugin(plugin: KaleidoPumpPlugin): PluginBase
 
     @Binds
     @AllConfigs
@@ -402,6 +410,12 @@ abstract class PluginsListModule {
     @IntoMap
     @IntKey(430)
     abstract fun bindGlimpPlugin(plugin: GlimpPlugin): PluginBase
+
+    @Binds
+    @AllConfigs
+    @IntoMap
+    @IntKey(435)
+    abstract fun bindAccuChekSmartGuidePlugin(plugin: AccuChekSmartGuidePlugin): PluginBase
 
     @Binds
     @AllConfigs
