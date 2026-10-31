@@ -189,6 +189,7 @@ dependencies {
     implementation(project(":pump:medtrum"))
     implementation(project(":pump:equil"))
     implementation(project(":pump:insight"))
+    implementation(project(":pump:kaleido"))
     implementation(project(":pump:medtronic"))
     implementation(project(":pump:common"))
     implementation(project(":pump:omnipod:common"))
